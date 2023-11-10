@@ -12,7 +12,7 @@ function App() {
           <Route path="/" element={<Home />} />
         </Routes>
         <Routes>
-          <Route path="/ecossistemas" element={<Ecossistemas />} />
+          <Route path="https://natureblog.cmouradev.com/ecossistemas" element={<Ecossistemas />} />
         </Routes>
         <Routes>
           <Route path="/solucoes" element={<Solucoes />} />
