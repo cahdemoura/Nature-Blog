@@ -1,8 +1,9 @@
-import { ContainerLinks, FooterContainer, FooterSections, Icon, Link } from "./FooterStyle";
+import { ContainerLinks, FooterContainer, FooterSections, Icon, Links } from "./FooterStyle";
 import { BsFacebook, BsInstagram } from 'react-icons/bs'
 import { AiFillTwitterCircle, AiFillYoutube } from 'react-icons/ai'
 import { navData } from "../../data/NavbarData";
 import { FooterData } from "../../data/FooterData";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -28,9 +29,7 @@ const Footer = () => {
             <FooterSections>
                 <ContainerLinks>
                     {navData.map((data, index) => (
-
-                        <Link key={index} href={data.rota}>{data.text}</Link>
-
+                        <Links key={index}><Link className="link" to={data.rota}>{data.text}</Link></Links>
                     ))}
                 </ContainerLinks>
 
@@ -39,9 +38,7 @@ const Footer = () => {
             <FooterSections>
                 <ContainerLinks>
                     {FooterData.map((data, index) => (
-
-                        <Link key={index} href={data.rota}>{data.texto}</Link>
-
+                        <Links key={index}><Link className="link" to={data.rota}>{data.texto}</Link></Links>
                     ))}
                 </ContainerLinks>
             </FooterSections>

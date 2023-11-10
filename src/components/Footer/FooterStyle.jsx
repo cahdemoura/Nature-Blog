@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 export const FooterContainer = styled.footer`
     background-color: #2773ff;
     display: flex;
@@ -39,7 +39,7 @@ export const Icon = styled.span`
 
 `;
 
-export const ContainerLinks = styled.div`
+export const ContainerLinks = styled.ul`
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -48,11 +48,17 @@ export const ContainerLinks = styled.div`
     }
 `;
 
-export const Link = styled.a`
+export const Links = styled.li`
+    list-style: none;
     font-weight: 600;
-    text-decoration: none;
     color: white;
     font-size: 20px;
+
+    .link{
+        text-decoration: none;
+        color: white;
+    }
+    
     &:hover{
         text-decoration: underline;
     }

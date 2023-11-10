@@ -12,7 +12,7 @@ const Home = () => {
             <Navbar />
             <Banner photo={"./ES.jpg"} title={"Entenda como preservar"} boldTitle={"O Meio Ambiente"} paragraph={"Promovendo a Sustentabilidade Ambiental: Juntos, fazemos a diferença para um mundo mais verde e saudável."} />
             <MainTitleContainer>
-                <MainTitle>Notícias do Bddlog</MainTitle>
+                <MainTitle>Notícias do Blog</MainTitle>
             </MainTitleContainer>
             <BlogNotices />
             <MenuAuthors />
