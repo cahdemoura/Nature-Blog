@@ -44,7 +44,7 @@ export const NavLinks = styled.li`
 
   a {
     display: block;
-
+    padding: 16px 0;
     color: black;
     font-weight: 600;
     font-size: 16px;
@@ -53,6 +53,20 @@ export const NavLinks = styled.li`
 
   a:hover {
     color: orange;
+  }
+
+  @media (max-width: 960px) {
+
+    &:hover{
+      color: orange;
+      background-color: white;
+      
+        a:hover{
+        color: orange;
+      }
+    }
+
+
   }
 `;
 
