@@ -10,14 +10,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-        </Routes>
-        <Routes>
-          <Route path="https://natureblog.cmouradev.com/ecossistemas" element={<Ecossistemas />} />
-        </Routes>
-        <Routes>
+          <Route path="/ecossistemas" element={<Ecossistemas />} />
           <Route path="/solucoes" element={<Solucoes />} />
-        </Routes>
-        <Routes>
           <Route path="/sobre" element={<Sobre />} />
         </Routes>
       </BrowserRouter>

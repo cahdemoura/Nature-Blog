@@ -4,7 +4,7 @@ import { MobileIcon, Nav, NavLinks, NavMenu, NavSection } from "./NavbarStyle";
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { AiOutlineClose } from 'react-icons/ai'
 import { navData } from "../../data/NavbarData";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const [show, setShow] = useState(false);
@@ -22,7 +22,7 @@ const Navbar = () => {
                 <NavSection>
                     <NavMenu show={show}>
                         {navData.map((menu,index)=>(
-                            <NavLinks key={index}><a href={menu.rota}>{menu.text}</a></NavLinks>
+                            <NavLinks key={index}><Link to={menu.rota}>{menu.text}</Link></NavLinks>
                         ))}
 
                         {/*
